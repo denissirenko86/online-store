@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <!-- Bootstrap grid -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- ion range style -->
+    <link rel="stylesheet" href="css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,7 +23,7 @@
             <div class="top-header d-flex align-items-center">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/logo-header.png" alt="">
+                        <img src="img/logo.png" alt="">
                     </a>
                 </div>
                 <!-- /.logo -->
@@ -30,9 +33,14 @@
                 <!-- /.need-help -->
                 <div class="user-controls d-flex align-items-center">
                     <div class="dropdown-item">
-                        <div class="dropdown-control d-flex">
+                        <div class="dropdown-control d-flex" id="dropdownMenuLink" data-toggle="dropdown">
                             <i class="far fa-bell mx-auto my-auto"></i>
                             <span class="notify-count bg-orange">8</span>
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
                     <!-- /.dropdown-item -->
@@ -143,6 +151,10 @@
                             <!-- /.aside-section -->
                             <div class="aside-section bg-white border-grey">
                                 <h3 class="aside-title">Price Range</h3>
+                                <div class="range-slider-wrap">
+                                    <input type="text" id="price-range" name="price-ranges" value="" />
+                                </div>
+                                <!-- /.range-slider-wrap -->
                                 <button class="aside-btn"><i class="fas fa-search"></i>Search</button>
                             </div>
                             <!-- /.aside-section -->
@@ -719,7 +731,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- ion range slider -->
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- Init plugins -->
+    <script src="js/init.js"></script>
 </body>
 </html>
