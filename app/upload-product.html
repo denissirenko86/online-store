@@ -14,6 +14,9 @@
     <!-- ion range style -->
     <link rel="stylesheet" href="css/ion.rangeSlider.css">
     <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
+    <!-- jQuery form styler -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -237,7 +240,51 @@
             </div>
         </div>
         <!-- /.inner small-inner -->
-        
+        <div class="content-wrapper all-items-wrap">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Upload Product</li>
+                </ul>
+                <!-- /.breadcrumb -->
+                <div class="upload-product-content bg-white border-grey">
+                    <form>
+                        <h3 class="head-title">Upload Your item</h3>
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="category">Select Categories<sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <select name="category" id="category" class="select-styler">
+                                        <option value="">Select</option>
+                                        <option value="">Category-1</option>
+                                        <option value="">Category-2</option>
+                                    </select>
+                                </div>
+                                <!-- /.col-9 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="product-name">Product Name<sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="product-name" name="product-name" placeholder="Enter your product name here ...">
+                                </div>
+                                <!-- /.col-9 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                    </form>                    
+                </div>
+                <!-- /.upload-product-content -->
+            </div>
+        </div>
     </main>
     <!-- /#main -->
     <footer id="footer" class="bg-dark-blue">
@@ -318,6 +365,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- ion range slider -->
     <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- jQuery form styler -->
+    <script src="js/jquery.formstyler.min.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
 </body>

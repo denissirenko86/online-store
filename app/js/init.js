@@ -10,4 +10,7 @@
         prefix: "$",
         hide_min_max: true
     });
+
+    // Init jQuery form styler
+    $('.select-styler, .input-file-styler').styler();
 })(jQuery);
