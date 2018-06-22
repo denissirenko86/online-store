@@ -302,6 +302,15 @@
     font: 14px/40px 'robotoregular', sans-serif;
     color: #707070;
 }
+
+.submit-btn {
+    margin-top: 42px;
+    display: inline-block;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 0.9375rem;
+    color: #fff;
+    padding: 10px 40px 13px 36px;
+}
 /* Custom styles */
 .top-header {
     padding-top: 26px;
@@ -1094,5 +1103,10 @@
 .form-body label sup {
     color: #8bc34a;
     font-size: 1.2rem;
+    margin-left: 2px;
+}
+
+#product-description {
+    height: 150px;
 }
 /* upload-product end */

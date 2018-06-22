@@ -23,14 +23,16 @@
 }
 .jq-file input {
 	position: absolute;
-	top: 0;
-	right: 0;
-	height: auto;
+	top: 50%;
+	left: 8px;
 	margin: 0;
-	padding: 0;
+	padding: 7px 17px 8px 13px;
+	border: 1px solid #CCC;
+	background: #f9f9f9;
+	font-family: 'robotoregular', sans-serif;
+	font-size: 0.75rem;
+	color: #707070;
 	opacity: 0;
-	font-size: 100px;
-	line-height: 1em;
 }
 .jq-file__name {
 	overflow: hidden;
