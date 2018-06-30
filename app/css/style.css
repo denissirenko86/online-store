@@ -118,7 +118,7 @@
 .text-center {
     text-align: center;
 }
-/* Default component */
+/* Default component start */
 .breadcrumb {
     padding: 45px 0;
 }
@@ -169,6 +169,7 @@
 .card {
     box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
     transition: all .1s ease-in;
+    position: relative;
 }
 
 .aside-section .card {
@@ -361,14 +362,102 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 1px solid #b1b1b1;
+    /* border: 1px solid #b1b1b1; */
     background-color: #e8e8e8;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, .3);
 }
 
 .slick-dots li.slick-active button {
     background-color: #8bc34a;
     border: 1px solid #8bc34a;
 }
+
+.card.hot::before {
+    content: '\f0e7';
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #8bc34a;
+}
+
+.mobile-aside-toggle {
+    display: none;
+}
+
+.close-mobile-aside {
+    display: none;
+}
+
+@media (max-width:991px) {
+    .mobile-aside-toggle {
+        display: block;
+    }
+
+    .close-mobile-aside {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #fff;
+    }
+
+    .mobile-aside {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        transition: tranform .2s ease-in;
+    }
+
+    .mobile-aside.left {
+        transform: translateX(-100%);
+    }
+
+    .mobile-aside.right {
+        transform: translateX(100%);
+        left: auto;
+        right: 0;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .7);
+        opacity: 0;
+        z-index: -1;
+    }
+
+    body.show-aside {
+        overflow-y: hidden;
+    }
+
+    .show-aside .mobile-aside {
+        height: 100vh;
+        overflow: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .show-aside .mobile-aside {
+        transform: translateX(0);
+    }
+
+    .show-aside .overlay {
+        z-index: 998;
+        opacity: 1;
+    }
+}
+/* Default component end */
 /* Custom styles */
 .top-header {
     padding-top: 26px;
@@ -632,6 +721,14 @@
 
 .header-nav a + a {
     margin-left: 35px;
+}
+
+@media (max-width: 991px) {
+    .user-controls {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
 }
 /* header end */
 /* inner start */
