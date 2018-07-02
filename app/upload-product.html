@@ -17,6 +17,8 @@
     <!-- jQuery form styler -->
     <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <!-- Slick nav -->
+    <link rel="stylesheet" href="css/slicknav.css">
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -254,11 +256,11 @@
                         <h3 class="head-title">Upload Your item</h3>
                         <div class="form-body">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="category">Select Categories<sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-11 col-md-8">
                                     <select name="category" id="category" class="select-styler">
                                         <option value="">Select</option>
                                         <option value="">Category-1</option>
@@ -269,55 +271,55 @@
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="product-name">Product Name<sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-10 col-md-8">
                                     <input type="text" class="form-control" id="product-name" name="product-name" placeholder="Enter your product name here ...">
                                 </div>
                                 <!-- /.col-9 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="product-description">Product Description<sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-10 col-md-8">
                                     <textarea name="product-description" class="form-control" id="product-description" cols="30" rows="10" placeholder="<h1> Type your text  here </h1/>"></textarea>
                                 </div>
                                 <!-- /.col-8 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="upload-main-file">Upload Main File<sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-10 col-md-8">
                                     <input type="file" class="input-file-styler" name="upload-main-file" id="upload-main-file" data-browse="Choose File" data-placeholder="No File Choosen">
                                 </div>
                                 <!-- /.col-8 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="upload-screenshots">Upload Screenshots<sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-10 col-md-8">
                                     <input type="file" class="input-file-styler" name="upload-screenshots" id="upload-screenshots" data-browse="Choose File" data-placeholder="No File Choosen">
                                 </div>
                                 <!-- /.col-8 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="select-type">File Included<sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-11 col-md-8 ">
                                     <select name="select-type" id="select-type" class="select-styler">
                                         <option value="">Select File Type</option>
                                         <option value="">Type-1</option>
@@ -328,22 +330,22 @@
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="file-dimensions">File Dimensions<sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-10 col-md-8">
                                     <input type="number" class="form-control" name="file-dimensions" id="file-dimensions" placeholder="Enter the item  dimentionss here ...">
                                 </div>
                                 <!-- /.col-8 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="item-tags">Item Tags<sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-10 col-md-8">
                                     <input type="text" class="form-control" name="item-tags" id="item-tags" placeholder="Enter Tag Here">
                                 </div>
                                 <!-- /.col-8 -->
@@ -354,22 +356,22 @@
                         <h3 class="head-title">Set Your Price (US$)</h3>
                         <div class="form-body">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="regular-license">Regular License<sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-10 col-md-8">
                                     <input type="number" class="form-control" min="0.00" max="10000.00" step="0.01" placeholder="$00.00">
                                 </div>
                                 <!-- /.col-8 -->
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-12 col-md-3">
                                     <label for="extended-license">Extended License<sup>*</sup></label>
                                 </div>
                                 <!-- /.col-3 -->
-                                <div class="col-8">
+                                <div class="col-10 col-md-8">
                                     <input type="number" class="form-control" min="0.00" max="10000.00" step="0.01" placeholder="$00.00"> 
                                 </div>
                                 <!-- /.col-8 -->
@@ -470,6 +472,8 @@
     <script src="js/ion.rangeSlider.min.js"></script>
     <!-- jQuery form styler -->
     <script src="js/jquery.formstyler.min.js"></script>
+    <!-- Slick nav -->
+    <script src="js/jquery.slicknav.min.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
 </body>

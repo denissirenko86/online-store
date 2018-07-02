@@ -14,6 +14,8 @@
     <!-- ion range style -->
     <link rel="stylesheet" href="css/ion.rangeSlider.css">
     <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
+    <!-- Slick nav -->
+    <link rel="stylesheet" href="css/slicknav.css">
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,7 +39,7 @@
                             <i class="far fa-bell mx-auto my-auto"></i>
                             <span class="notify-count bg-orange">8</span>
                         </div>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuLink">
                             <a href="#" class="dropdown-notify-item d-flex">
                                 <div class="notify-item-avatar">
                                     <img src="img/notify-avatar.png" alt="">
@@ -85,7 +87,7 @@
                             <i class="far fa-envelope mx-auto my-auto"></i>
                             <span class="notify-count bg-red">5</span>
                         </div>
-                        <div class="dropdown-menu envelope dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-menu envelope dropdown-menu-left" aria-labelledby="dropdownMenuLink">
                             <a href="#" class="dropdown-notify-item d-flex">
                                 <div class="notify-item-avatar">
                                     <img src="img/notify-avatar.png" alt="">
@@ -136,7 +138,7 @@
                             <i class="fas fa-shopping-cart mx-auto my-auto"></i>
                             <span class="notify-count bg-green">8</span>
                         </div>
-                        <div class="dropdown-menu shop dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-menu shop dropdown-menu-left" aria-labelledby="dropdownMenuLink">
                             <a href="#" class="dropdown-notify-item d-flex">
                                 <div class="notify-item-avatar">
                                     <img src="img/product-item.jpg" alt="">
@@ -183,7 +185,7 @@
                             <h6>Mike Hussy <i class="fas fa-chevron-down"></i></h6>
                             <span class="balance">$171</span>
                         </div> 
-                        <div class="dropdown-menu user dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-menu user dropdown-menu-left" aria-labelledby="dropdownMenuLink">
                             <ul class="dropdown-notify-item">
                                 <li><a href="#"><i class="fas fa-chevron-right"></i>Profile Page</a></li>
                                 <li><a href="#"><i class="fas fa-chevron-right"></i>Portfolio</a></li>
@@ -399,12 +401,21 @@
                     </div>
                     <!-- /.col-md-3 -->
                     <div class="col-12 col-lg-9">
-                        <div class="view-controls bg-white border-grey">
-                            <div class="mobile-aside-toggle">
-                                <i class="fab fa-elementor"></i>
-                            </div>
+                        <div class="view-controls d-flex bg-white border-grey">
+                           <div class="left-side-sort mr-auto">
+                                <i class="fas fa-sort-amount-down"></i>
+                                <span>Sort by: New Items</span>
+                                <i class="fas fa-sort"></i>
+                           </div> 
+                           <div class="right-side-sort ml-auto">
+                                <i class="fas active fa-th-large"></i>
+                                <i class="fas fa-th-list"></i>
+                           </div>
                         </div>
                         <!-- /.view-controls -->
+                        <div class="mobile-aside-toggle">
+                            <i class="fab fa-elementor"></i>
+                        </div>
                         <div class="row">
                             <div class="col-md-6 col-xl-4">
                                 <div class="card bg-white">
@@ -870,7 +881,7 @@
         <div class="top-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-xl-3 col-lg-6 col-12">
                         <h6 class="footer-title">About Company</h6>
                         <p>Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus. </p>
                         <div class="footer-contacts d-flex">
@@ -885,7 +896,7 @@
                         <!-- /.footer-contacts -->
                     </div>
                     <!-- /.col-3 -->
-                    <div class="col-3">
+                    <div class="col-xl-3 col-lg-6 col-12">
                         <h6 class="footer-title">Join Our Community</h6>
                         <ul class="community">
                             <li><a href="#"><i class="fas fa-chevron-right"></i>Home</a></li>
@@ -896,7 +907,7 @@
                         </ul>
                     </div>
                     <!-- /.col-3 -->
-                    <div class="col-3">
+                    <div class="col-xl-3 col-lg-6 col-12">
                         <h6 class="footer-title">Need Help?</h6>
                         <ul class="help">
                             <li><a href="#"><i class="fas fa-chevron-right"></i>Help Center</a></li>
@@ -907,7 +918,7 @@
                         </ul>
                     </div>
                     <!-- /.col-3 -->
-                    <div class="col-3">
+                    <div class="col-xl-3 col-lg-6 col-12">
                         <h6 class="footer-title">Follow Us On</h6>
                         <ul class="social d-flex">
                             <li><a href="#"><span class="facebook"></span></a></li>
@@ -946,6 +957,8 @@
     <script src="js/ion.rangeSlider.min.js"></script>
     <!-- Aside js -->
     <script src="js/aside.js"></script>
+    <!-- Slick nav -->
+    <script src="js/jquery.slicknav.min.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
 </body>

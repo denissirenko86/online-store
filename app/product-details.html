@@ -14,6 +14,8 @@
     <!-- ion range style -->
     <link rel="stylesheet" href="css/ion.rangeSlider.css">
     <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
+    <!-- Slick nav -->
+    <link rel="stylesheet" href="css/slicknav.css">
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -263,10 +265,12 @@
                                 <p>Bmply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived noning essentially unchanged. </p>
                             </div>
                             <!-- /.product-description -->
-                            <div class="d-flex align-items-center">
-                                <a href="#" class="product-btn bg-coral">Live Preview</a>
-                                <a href="#" class="product-btn bg-midnight-blue">Screenshots</a>
-                                <a href="#" class="product-btn bg-lime">Documentation</a>
+                            <div class="d-flex align-items-center flex-wrap">
+                                <div class="product-buttons">
+                                    <a href="#" class="product-btn bg-coral">Live Preview</a>
+                                    <a href="#" class="product-btn bg-midnight-blue">Screenshots</a>
+                                    <a href="#" class="product-btn bg-lime">Documentation</a>
+                                </div>
                                 <nav class="product-social ml-auto">
                                     <a href="#"><i class="fab fa-facebook-f bg-azure"></i></a>
                                     <a href="#"><i class="fab fa-twitter bg-sky"></i></a>
@@ -276,7 +280,7 @@
                                 <!-- /.product-social -->
                             </div>
                             <div class="product-tabs bg-white border-grey">
-                                <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
+                                <ul class="nav nav-tabs d-flex flex-wrap" id="myTab" role="tablist">
                                     <li class="nav-item">
                                       <a class="nav-link active" id="item-features-tab" data-toggle="tab" href="#item-features-tab" role="tab" aria-controls="item-features" aria-selected="true">Item Features</a>
                                     </li>
@@ -343,7 +347,7 @@
                             <h4>More Product by PsdBosS</h4>
                         </div>                        
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-md-6 col-xl-4">
                                 <div class="small-card bg-white d-flex">
                                     <div class="small-card-img">
                                         <a href="#"><img src="img/small-card-img.jpg" alt=""></a>
@@ -355,8 +359,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="small-card bg-white d-flex">
                                     <div class="small-card-img">
                                         <a href="#"><img src="img/small-card-img.jpg" alt=""></a>
@@ -368,8 +372,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="small-card bg-white d-flex">
                                     <div class="small-card-img">
                                         <a href="#"><img src="img/small-card-img.jpg" alt=""></a>
@@ -381,8 +385,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="small-card bg-white d-flex">
                                     <div class="small-card-img">
                                         <a href="#"><img src="img/small-card-img.jpg" alt=""></a>
@@ -394,8 +398,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="small-card bg-white d-flex">
                                     <div class="small-card-img">
                                         <a href="#">
@@ -409,8 +413,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col-lg-4 -->
-                            <div class="col-lg-4">
+                            <!-- /.col -->
+                            <div class="col-md-6 col-xl-4">
                                 <div class="small-card bg-white d-flex">
                                     <div class="small-card-img">
                                         <a href="#">
@@ -424,7 +428,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col-lg-4 -->
+                            <!-- /.col -->
                         </div>                       
                         <!-- /.product-info-wrap -->
                    </div>
@@ -434,7 +438,7 @@
                     <aside id="aside">
                         <div class="aside-section bg-white border-grey">
                             <h3 class="aside-title">Product Price</h3>
-                            <div class="product-price d-flex justify-content-between">
+                            <div class="product-price d-flex justify-content-between flex-wrap">
                                 <span class="price">$59.00</span>
                                 <div class="dropdown-item">
                                     <button class="price-btn d-flex id="dropdownMenuLink" data-toggle="dropdown"">Regular<i class="fas fa-sort-down"></i></button>
@@ -454,14 +458,14 @@
                         <!-- /.aside-section -->
                         <div class="aside-section bg-white border-grey">
                             <h3 class="aside-title">Product Author</h3>
-                            <div class="author-section d-flex">
+                            <div class="author-section d-flex flex-wrap">
                                 <img src="img/product-author.jpg" alt="">
-                                <div class="author-info d-flex flex-column justify-content-between">
+                                <div class=".author-section d-flex flex-column justify-content-between">
                                     <h4>PsdBoss</h4>
                                     <button class="price-btn">View Profile</button>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between flex-wrap">
                                 <div class="smile"></div>
                                 <div class="sheet"></div>
                                 <div class="lightning"></div>
@@ -584,6 +588,8 @@
     <script src="js/ion.rangeSlider.min.js"></script>
     <!-- Aside js -->
     <script src="js/aside.js"></script>
+    <!-- Slick nav -->
+    <script src="js/jquery.slicknav.min.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
 </body>
